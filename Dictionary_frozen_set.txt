@@ -1,0 +1,235 @@
+Previous session:
+1. Tuple
+2. Set
+3. difference between list, tuple , set
+4. Operators 
+
+Today's Session:
+1. Frozen set
+2. Range
+3. Dictionary
+================================================================
+********************************************************************************************************
+Frozensets are immutable, meaning once created, their elements cannot be changed.we cannot add or remove an element
+Like sets, frozensets do not allow duplicate elements, and they are unordered.
+a=frozenset([1, 2, 3])
+print(a)
+
+
+frz=frozenset([1,2,3,4,4])
+print(type(frz))
+print(froz)
+output:
+
+<class 'frozenset'>
+frozenset({1, 2, 3, 4})
+
+
+*****************************************************************************************************************************************
+
+Range: range() is a built-in function used to generate a sequence of numbers . Generally it is used in looping ie., for loop
+a=range(5)
+print(a)
+print(type(a))
+
+for i in range(5)
+print(i)
+
+a=range(5)
+print(a)
+print(type(a))
+for i in a:
+    print(i)
+
+output:
+range(0, 5)
+<class 'range'>
+0
+1
+2
+3
+4
+
+for i in range(101,106):
+    print(i)
+print(i)
+print('End')
+
+output:
+101
+102
+103
+104
+105
+105
+End
+
+*************************************************************************************
+
+Dictionary:
+-----------
+--> As per your requirement if you want to maintain data in key value pair format , then we can use Dictionary  datatype.
+--> to represent dictionary we have to use {}
+{1,2,3,4,5} ==> Set
+
+studentid	studentname
+1			Raja
+2			Btech
+3			qualitythought
+
+
+student={"1":"Raja","2":"Btech,"3":"qualitythought"}
+student.keys() --> 1,2,3
+student.values()
+
+student["4"]="gcp"
+
+student={"1":"Raja","2":"Btech,"3":"qualitythought","4":"gcp"}
+
+student["2"]="xx"
+
+student={"1":"Raja","2":"xx","3":"qualitythought","4":"gcp"}
+
+On top of dictionary we can not able to maintain duplicate Keys.
+student={"1":"Raja","2":"xx","3":"qualitythought","4":"gcp","2":"yy"} --> It is not possible
+
+On top of dictionary we can have duplicate values ie., same value for different keys  --> It is possible
+student={"1":"Raja","2":"xx","3":"qualitythought","4":"gcp","5":"gcp"}
+
+
+student={"1":["Raja",60,70,80],"2":["gcp",80,90,80]}
+
+name,m1,m2,m3
+["Raja",60,70,80]
+
+==> If you want to see data for any key --> student["1"]
+
+==> I want to see values of each and every key from dictionary
+
+student={"1":"Raja","2":"xx","3":"qualitythought","4":"gcp","5":"gcp"}
+
+
+*****************************************************************************************************
+
+
+
+st={"a":"Raja","b":"Rani","c":"Rama","d":"Rama"}
+print(type(st))
+print(st)
+print(st["a"])
+print(st.keys())
+print(st.values())
+
+st={"10":"Raja","20":"Rani","30":"Rama","40":"Rama"}
+print(type(st))
+print(st)
+print(st["30"])
+print(st.keys())
+print(st.values())
+
+
+st={"Raja":"10","Rani":"20","Rama":"30","Rama":"40"}
+print(type(st))
+print(st)
+print(st["Raja"])
+print(st.keys())
+print(st.values())
+
+
+Data type:
+1. Numeric type: Int , float
+2. Boolean : True False
+3. Seq  : str,list,tuple
+4. Set: set , Frozen set
+5. Mapping type : Data dictionary
+6. None
+
+division of numbers :
+a/b
+12/0 --> undefined 
+a, b ===> input 
+if user b as 0
+none:
+==================================================
+Conditional stmt:
+1. if :  if a codition is true , it will execute block of code 
+2. if else :  executes block of code if condition is true . Executes another block of code if condition is false.
+3. if elif else: to check multiple conditions  and execute different blocks of code based on the first condition that is true. 
+4. Nested if
+
+--> wheneever you want to specify conditional statements in python then we need to use "if else" logic.
+
+today if my laptop doesn't work --> leave from office
+if laoptop works --> I will go office
+
+if it rains --> I will not go to office
+else  -- I will go to office
+
+a>10 : a is greater
+a<40 : a is lesser
+a=30 : a is equal to 30
+
+a=30
+
+a>10 --> a is greate than 10
+a<40 --> a is lesser than 40
+a=30 --> a is equal to 30 
+
+syntax for if:
+--------------
+if cond1:
+	statement1
+elif cond2:
+	statement2
+elif cond3:
+	statement3
+else:
+	finalstatement
+	
+syntax for if:
+--------------
+if cond1:
+	statement1
+else:
+	finalstatement
+	
+syntax for if:
+--------------
+if cond1:
+	statement1
+
+
+a=50
+if a>50:
+    print("a is greater than 50")
+
+******************************	
+
+a=50
+if a>50:
+    print("a is greater than 50")
+else:
+    print("a is less or equal to 50")
+
+******************************
+	
+a=50
+if a>50:
+    print("a is greater than 50")
+elif a==50:
+    print("a is equal to 50")
+else:
+    print("a is less than 50")
+
+****************************************************
+
+1. take a input from user: check if a number is positive or negative.
+2. create a dictionary and try to remove a key and value pair.
+3. print range of 10 numbers.
+4. create a frozen set of characters.
+
+
+
+
+
+

@@ -1,0 +1,207 @@
+For Loop:
+The for loop iterates over a sequence of items (such as a list, tuple, string, or range) and executes the block of code for each item in the sequence.
+It is used when you know the number of times you want to iterate or when you want to iterate over a predefined sequence.
+
+While Loop:
+The while loop repeats a block of code as long as a specified condition is true.
+It is used when you don't know in advance how many times you want to execute the block of code, and you want to keep executing it until a certain condition is met.
+
+Difference between for and while
+
+1.Control Over Iteration:
+In a for loop, you have more control over the iteration because you directly iterate over a sequence.
+In a while loop, you have to manually update variables within the loop to control the iteration.
+
+2. when to use for and when to use while
+Use for loop when you know the number of iterations or when you want to iterate over a collection of items.
+Use while loop when you want to iterate until a specific condition is met, and you may not know in advance how many iterations are needed.
+
+3.Initialization:
+In a for loop, you initialize the iteration variable directly within the loop syntax.
+In a while loop, you usually initialize variables before entering the loop and update them within the loop.
+
+****************************************************************************************************************************************************
+#to print the numbers from 0 to 5
+n=0
+while(n<=5):
+    print(n)
+    n+=1
+print("end",n)
+
+output:
+0
+1
+2
+3
+4
+5
+end,6
+**************************************
+#to print in reverse order
+n=5
+while(n>=0):
+    print(n)
+    n-=1
+print("end",n)
+
+output:
+5
+4
+3
+2
+1
+0
+end -1
+
+***********************************************************
+Factorial of a number:
+n=int(input("enter number"))
+res=1
+while (n>0):
+    res=res*n
+    n=n-1
+print(res)
+
+*********************************************************************
+# take 5 numbers from user and find the summation
+tot=0
+count=0
+while(count<5):
+    num=int(input("enter number:"))
+    tot=tot+num
+    count=count+1
+print(tot)
+********************************************************************
+
+print square of a first 5 numbers:
+
+i=1
+while(i<=5):
+    print(i*i)
+    i+=1
+
+**************************************************************
+For examples: 
+
+for i in range(0,5):
+    print(i*i)
+
+output:
+0
+1
+4
+9
+16
+*********************************************
+for i in range(0,21,2):
+    print(i)
+
+output:
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+****************************************
+for i in range(21,0,-2):
+    print(i)
+
+21
+19
+17
+15
+13
+11
+9
+7
+5
+3
+1
+***********************************
+
+create a list ,print each and every element
+
+lst=[12,33,34]
+
+12
+33
+34
+**********************************
+str='Python Course'
+for i in str:
+    print(i)
+P
+y
+t
+h
+o
+n
+ 
+C
+o
+u
+r
+s
+e
+*************************************
+#create a new list with square of a number in list
+l1=[2,3,4,5,6]
+l2=[]
+for i in l1:
+    l2.append(i*i)
+print(l2)
+
+output:
+
+[4, 9, 16, 25, 36]
+***************************************
+#to print 2 table:
+for i in range(1,11):
+    print('2*',i,'=',2*i)
+
+2* 1 = 2
+2* 2 = 4
+2* 3 = 6
+2* 4 = 8
+2* 5 = 10
+2* 6 = 12
+2* 7 = 14
+2* 8 = 16
+2* 9 = 18
+2* 10 = 20
+
+************************************************
+to print multiplication tables from 2 to 10:
+
+for j in range(2,11):
+    for i in range(1,11):
+        print(j,'*',i,'=',j*i)
+
+*********************************************
+for loop, find sum of numbers 1 to 10
+tot=0
+for i in range(1,11):
+    tot=i+tot
+print(tot)
+******************************************
+
+Assignment:
+1. write a for loop to print each character in the string "hello"
+2. write a for loop to print first 10 even number
+3. multiplication table of 5 
+4. use while loop to print 10 to 1 
+5. write a while loop to find factorial of a given number eg.4=4*3*2*!
+6. take 5 numbers from user and find the summation of all the 5 numbers
+
+
+
+
+
+
+
