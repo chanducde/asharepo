@@ -1,0 +1,12 @@
+create database if not exists chandu_db
+location 'gs://chandrakbucket/chandu.db;
+
+use chandu_db;
+create or replace temp view cust_lo
+using csv
+options(
+path='gs://chandrakbucket/chandu/source/customer_lo.csv');
+
+create table if not exists chandu_db.customer_lo
+using parquet
+select * from cust_lo;
